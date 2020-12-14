@@ -1,7 +1,6 @@
-/* -------REQUIRE EXPRESS--------- */
-const express = require('express');
+/* --------START APPLICATION-------------- */
+import app from './app'
+import './database'
 
-const app = express();
-
-app.listen(3000)
-console.log('Server on port',3000);
+app.listen(app.get('port'));
+console.log('Server on port', app.get('port'));

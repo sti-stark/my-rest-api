@@ -1,0 +1,33 @@
+## findAllTask
+GET http://localhost:3000/api/tasks
+
+
+### createTask
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "hacer un sitio web con express",
+    "description": "trabajo de grupo castilla",
+    "done": true
+}
+
+###findOneTask
+GET http://localhost:3000/api/tasks/5fd0e77ed0d00328ac9d49d5
+
+### deleteTask
+DELETE http://localhost:3000/api/tasks/5fd0ed67cbf53f236809263e
+
+### findAllDoneTask
+GET http://localhost:3000/api/tasks/done
+
+### findAllPendingTask
+GET http://localhost:3000/api/tasks/pending
+
+### updateTask
+PUT http://localhost:3000/api/tasks/5fd0e77ed0d00328ac9d49d1
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio web en Wix"
+}
